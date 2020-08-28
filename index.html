@@ -55,7 +55,7 @@
                   </picture>
                 </div>
                 <div class="w_button">
-                  <a href="order.html" title="BUY NOW">BUY NOW</a>
+                  <a href="order-a.html" title="BUY NOW">BUY NOW</a>
                 </div>
               </div>
             </div>
@@ -118,7 +118,7 @@
                           <li>Reduce Sun Spots For Brighter Skin</li>
                           <li>Increase Collagen For Firmer Skin</li>
                           <li>Shrink Pores For Smoother Skin</li>
-                          <li><a href="order.html">BUY NOW</a></li>
+                          <li><a href="order-a.html">BUY NOW</a></li>
                         </ul>
                         <p>
                           <img
@@ -371,7 +371,7 @@
                   <li>Patented Formula</li>
                   <li>Healthy Glowing Skin</li>
                 </ul>
-                <p><a href="order.html">BUY NOW</a></p>
+                <p><a href="order-a.html">BUY NOW</a></p>
               </div>
               <div class="grid-layout guarantee">
                 <div class="wrap-inner layt-50-50">
@@ -393,7 +393,7 @@
                         If you don’t, BeautyStat <br />Cosmetics comes with a
                         100% <br />satisfaction guarantee.
                       </p>
-                      <p><a href="order.html">BUY NOW</a></p>
+                      <p><a href="order-a.html">BUY NOW</a></p>
                     </div>
                   </div>
                 </div>
@@ -574,7 +574,7 @@
                     >customerservice@beautystatcosmetics.com</a
                   >&nbsp;with any concerns.
                 </p>
-                <p><a href="order.html" class="button-ord">BUY NOW</a></p>
+                <p><a href="order-a.html" class="button-ord">BUY NOW</a></p>
               </div>
             </div>
           </div>
@@ -696,125 +696,5 @@
       window.pageType = '';
     </script>
     <!-- /Site setting -->
-
-    <!-- add gtm event -->
-    <!-- <script>
-      (function () {
-        window.dataLayer = window.dataLayer || [];
-        window._CTR_FingerprintGeneratedCallback = function (fpId) {
-          window.dataLayer.push({
-            event: 'Presale',
-            fpid: fpId,
-          });
-          console.log('fired gtm event for Presale');
-        };
-        //load ctrwow fingerprint analytics script
-        try {
-          const fingerprint = JSON.parse('{"_CTR_TRACKING_ID":"BS0000361"}');
-          window._CTR_TRACKING_ID = fingerprint._CTR_TRACKING_ID;
-          window._CTR_CUSTOM_DATA = {
-            siteName: 'beautystatcosmetics',
-            pageName: '',
-            pageType: 'presale',
-            campaignName: '',
-            campaignWebKey: '',
-          };
-          const script = document.createElement('script');
-          script.src =
-            '//d16hdrba6dusey.cloudfront.net/ctrwow_fp_analytics.min.js';
-          script.defer = true;
-          document.querySelector('body').appendChild(script);
-        } catch (err) {
-          console.log('Bind fingerprint error: ', err);
-        }
-      })();
-    </script>
-    <!-- /add gtm event -->
-
-    <!-- Google GTM -->
-    <input type="hidden" id="gtmId" value="GTM-M3959XV" />
-    <script>
-      window.addEventListener('load', function () {
-        let gtmId = 'GTM-M3959XV';
-        const orderGtmId = window.localStorage.getItem('orderGtmId');
-        //on confirm page we use a script to enable the variable isUseDifferentGtmId to true
-        if (
-          typeof isUseDifferentGtmId !== 'undefined' &&
-          isUseDifferentGtmId === true &&
-          orderGtmId
-        ) {
-          gtmId = orderGtmId;
-        }
-        console.log('init gtm script');
-        (function (w, d, s, l, i) {
-          w[l] = w[l] || [];
-          w[l].push({
-            'gtm.start': new Date().getTime(),
-            event: 'gtm.js',
-          });
-          var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s),
-            dl = l != 'dataLayer' ? '&l=' + l : '';
-          j.async = true;
-          j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-          f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', gtmId);
-      });
-    </script>
-    <!-- /Google GTM -->
-
-    <!-- add Control CTA event -->
-    <script>
-      (function () {
-        function getUrlParam(param) {
-          let href = '';
-          if (location.href.indexOf('?')) {
-            href = location.href.substr(location.href.indexOf('?'));
-          }
-          const value = href.match(
-            new RegExp('[\?\&]' + param + '=([^\&]*)(\&?)', 'i')
-          );
-          return value ? value[1] : null;
-        }
-        const pcta = getUrlParam('pcta');
-        if (pcta && pcta !== '') {
-          window.siteSetting.redirectURL = pcta;
-        }
-      })();
-    </script>
-    -->
-    <!-- /add Control CTA event -->
-
-    <!-- VWO -->
-    <!-- /VWO -->
-
-    <!-- Hotjar Tracking Code for dfo.global -->
-    <!-- /Hotjar Tracking Code for dfo.global -->
-
-    <!-- libs -->
-    <!-- /libs -->
-
-    <!-- site -->
-    <!-- /site -->
-    <script>
-      (function (d) {
-        try {
-          const fingerprint = JSON.parse('{"_CTR_TRACKING_ID":"BS0000361"}');
-          window._CTR_TRACKING_ID = fingerprint._CTR_TRACKING_ID;
-          //window._CTR_CUSTOM_DATA = {};
-          const script = d.createElement('script');
-          script.src =
-            'https://ctrwowprodcdn.blob.core.windows.net/library/ctrwow_analytics.min.js'; //product
-          //script.src = 'https://ctrwowdevuser.blob.core.windows.net/assets/ctrwow_analytics.min.js' //test
-          script.defer = true;
-          d.querySelector('body').appendChild(script);
-        } catch (err) {
-          console.log('Bind fingerprint error: ', err);
-        }
-      })(document);
-    </script>
-    <script src="js/lib.js"></script>
-    <script src="js/min.js"></script>
-    <script src="js/pre-6.js"></script>
   </body>
 </html>
